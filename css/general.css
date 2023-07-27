@@ -10,6 +10,8 @@
 /// COLORS /// 
 Primary: #FF4948
 Secondary: #180202
+Shades: #DE5150
+Tints: #F68080, #FF9292, #FDD8D8
 
 
 /* ///////////////////////// */
@@ -38,6 +40,15 @@ body {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols--2 {
+  grid-template-columns: 1fr 1fr;
+  gap: 8.4rem;
 }
 
 .secondary-heading {
