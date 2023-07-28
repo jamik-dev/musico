@@ -426,3 +426,64 @@
 .package-img {
   width: 100%;
 }
+
+/* ///////////////////// */
+/* //// CTA Section //// */
+/* ///////////////////// */
+
+.section-cta {
+  padding-bottom: 9.6rem;
+}
+
+.container-cta {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-form {
+  width: 60%;
+  padding: 4.8rem 9.6rem;
+  background-color: #FFF4F4;
+  border-radius: 20px;
+}
+
+.cta-description {
+  font-size: 1.6rem;
+  opacity: 70%;
+  margin-top: 0.8rem;
+}
+
+.cta-input-box {
+  margin-top: 3.2rem;
+  position: relative;
+}
+
+.cta-input {
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.8rem;
+  padding: 1.6rem 3rem;
+  border-radius: 1000px;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+}
+
+.cta-input::placeholder {
+  color: inherit;
+  opacity: 30%;
+}
+
+.cta-btn {
+  font-family: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.5rem 3rem;
+  border-radius: 1000px;
+  background-color: #FF4948;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+}
