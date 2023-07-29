@@ -32,6 +32,7 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 /* ////////////////////////// */
@@ -84,6 +85,10 @@ header *:focus {
   border-radius: 1000px;
   line-height: 1.4;
   letter-spacing: 0.6px;
+  transition: all 0.4s;
+}
+
+input {
   transition: all 0.4s;
 }
 
