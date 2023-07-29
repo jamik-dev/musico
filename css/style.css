@@ -192,7 +192,8 @@
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  font-size: 2.4rem;
+  font-size: 3rem;
+  font-weight: 500;
   list-style: none;
   transition: all 1s;
 
@@ -207,7 +208,7 @@
 }
 
 .navigation-links li:not(:last-child) {
-  border-bottom: 1px solid #de5150;
+  border-bottom: 2px solid #de5150;
 }
 
 .navigation-links a {
