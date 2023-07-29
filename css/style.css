@@ -109,28 +109,120 @@
 }
 
 .burger-button {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   cursor: pointer;
   gap: 0.6rem;
   background-color: transparent;
+  padding: 0.4rem;
 }
 
 .burger-item {
   border-radius: 1000px;
   background-color: #fff;
   height: 3px;
+  transition: all 0.8s;
 }
 
 .burger-item--first,
 .burger-item--third {
   width: 4rem;
+  z-index: 1;
 }
 
 .burger-item--second,
 .burger-item--forth {
   width: 3rem;
+  z-index: 1;
+}
+
+.navigation-links-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  height: 0;
+  width:  0;
+  backdrop-filter: blur(5px);
+  transition: all 0.8s;
+  overflow: hidden;
+
+}
+
+.active-burger .navigation-links-box {
+  height: calc(250vw);
+  width: calc(250vw);
+}
+
+.active-burger.burger-button {
+  box-shadow: none;
+}
+
+.active-burger .burger-item--first {
+  transform: rotate(-45deg) translate(-0.75rem, 1.2rem);
+  background-color: #de5150;
+}
+
+.active-burger .burger-item--third {
+  transform: rotate(45deg)  translate(0, -0.6rem);
+  background-color: #de5150;
+}
+
+.active-burger .burger-item--second {
+  transform: translateX(-100%);
+  background-color: #de5150;
+  opacity: 0;
+}
+
+.active-burger .burger-item--forth {
+  transform: translateX(100%);
+  background-color: #de5150;
+  opacity: 0;
+}
+
+.navigation-links { 
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  font-size: 2.4rem;
+  list-style: none;
+  transition: all 1s;
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.navigation-links li {
+  padding: 2.2rem;
+  text-align: center;
+}
+
+.navigation-links li:not(:last-child) {
+  border-bottom: 1px solid #de5150;
+}
+
+.navigation-links a {
+  color: #de5150;
+  text-decoration: none;
+}
+
+.active-navigation.navigation-links {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.active-navigation a:focus {
+  box-shadow: 0 0 2px 10px rgba(222, 80, 80, 0.5);
 }
 
 .logo-img {
@@ -561,6 +653,7 @@
   font-weight: 500;
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
+  transition: all 0.4s;
 }
 
 .footer-item:hover {
@@ -584,6 +677,6 @@
   background-color: #fff;
 }
 
-.social-links div:hover {
+.social-links a:hover {
   transform: translateY(-8px);
 }
