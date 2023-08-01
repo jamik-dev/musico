@@ -3,39 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Musico is a company that sells amazing designed, featured and best quality heaphones all over the world. We have free delivery for capital of a country"
+    />
+
+
+    <link rel="icon" href="img/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
     <script defer src="js/script.js"></script>
-    <title>Musico</title>
+    <title>Musico &mdash; Best headphones ever!</title>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <div class="navigation">
         <a class="logo-img" href="#">
-          <img class="logo" src="img/logo.svg" alt="logo of the website" />
+          <img class="logo" src="img/svg/logo.svg" alt="logo of the website" />
         </a>
         <div class="nav-service-box">
           <button class="search-box">
-            <img src="img/search.svg" alt="" />
+            <img src="img/svg/search.svg" alt="search icon" />
           </button>
           <span class="vertical-bar-nav"></span>
           <button class="purchase-box">
-            <img src="img/purchase.svg" alt="" />
+            <img src="img/svg/purchase.svg" alt="purchase icon" />
           </button>
           <span class="vertical-bar-nav"></span>
           <button class="user-box">
-            <img src="img/user.svg" alt="" />
+            <img src="img/svg/user.svg" alt="user icon" />
           </button>
         </div>
-        <button class="burger-button">
+        <button class="burger-button" aria-label="burger button to open modal of navigation">
           <span class="burger-item burger-item--first"></span>
           <span class="burger-item burger-item--second"></span>
           <span class="burger-item burger-item--third"></span>
@@ -56,58 +67,62 @@
       <section class="section-hero">
         <div class="container grid grid-cols--2 container-hero">
           <div class="hero-img-box">
-            <img
-              class="hero-img"
-              src="img/hero-img.png"
-              alt="amazing designed headphones"
-            />
+            <picture>
+              <source srcset="img/headphones/hero-img.webp" type="image.webp" />
+              <source srcset="img/headphones/hero-img.png" type="image.png" />
+              <img
+                class="hero-img"
+                src="img/headphones/hero-img.webp"
+                alt="amazing designed red headphone"
+              />
+            </picture>
 
-            <!-- <img class="headphone-hero-layer" src="img/headphone-layer1.svg" alt="hero img layer"> -->
+            <!-- <img class="headphone-hero-layer" src="img/svg/headphone-layer1.svg" alt="hero img layer"> -->
 
             <img
               class="hero-nota nota-first"
-              src="img/nota-1.svg"
-              alt="nota svg"
+              src="img/svg/nota-1.svg"
+              alt="music nota image for background layer of red headphone"
             />
             <img
               class="hero-nota nota-second"
-              src="img/nota-1.svg"
-              alt="nota svg"
+              src="img/svg/nota-1.svg"
+              alt="nusic nota image for background layer of red headphone"
             />
             <img
               class="hero-nota nota-third"
-              src="img/nota-1.svg"
-              alt="nota svg"
+              src="img/svg/nota-1.svg"
+              alt="nusic nota image for background layer of red headphone"
             />
             <img
               class="hero-nota nota-forth"
-              src="img/nota-1.svg"
-              alt="nota svg"
+              src="img/svg/nota-1.svg"
+              alt="nusic nota image for background layer of red headphone"
             />
             <img
               class="hero-nota nota-fifth"
-              src="img/nota-1.svg"
-              alt="nota svg"
+              src="img/svg/nota-1.svg"
+              alt="nusic nota image for background layer of red headphone"
             />
             <img
               class="hero-nota nota-sixth"
-              src="img/nota-2.svg"
-              alt="nota svg"
+              src="img/svg/nota-2.svg"
+              alt="nusic nota image for background layer of red headphone"
             />
             <img
               class="hero-nota nota-seventh"
-              src="img/nota-2.svg"
-              alt="nota svg"
+              src="img/svg/nota-2.svg"
+              alt="nusic nota image for background layer of red headphone"
             />
             <img
               class="hero-nota nota-eighth"
-              src="img/nota-2.svg"
-              alt="nota svg"
+              src="img/svg/nota-2.svg"
+              alt="nusic nota image for background layer of red headphone"
             />
             <img
               class="hero-nota nota-ninth"
-              src="img/nota-2.svg"
-              alt="nota svg"
+              src="img/svg/nota-2.svg"
+              alt="nusic nota image for background layer of red headphone"
             />
           </div>
           <div class="hero-content">
@@ -136,32 +151,32 @@
             <div class="headphone-box headphone-latest--first">
               <img
                 class="headphone-latest"
-                src="img/latest-red.png"
-                alt="red headphone"
+                src="img/headphones/latest-red.png"
+                alt="red sony headphone"
               />
             </div>
             <div class="headphone-box headphone-latest--second">
               <img
                 class="headphone-latest"
-                src="img/latest-blue.png"
-                alt="blue headphone"
+                src="img/headphones/latest-blue.png"
+                alt="blue sony headphone"
               />
             </div>
             <div class="headphone-box headphone-latest--third">
               <img
                 class="headphone-latest"
-                src="img/latest-orange.png"
-                alt="orange headphone"
+                src="img/headphones/latest-orange.png"
+                alt="orange sony headphone"
               />
             </div>
             <img
               class="left-arrow-latest"
-              src="img/left-arrow.svg"
+              src="img/svg/left-arrow.svg"
               alt="left arrow"
             />
             <img
               class="right-arrow-latest"
-              src="img/right-arrow.svg"
+              src="img/svg/right-arrow.svg"
               alt="right arrow"
             />
           </div>
@@ -178,9 +193,13 @@
               <div class="feature-headphone">
                 <div class="outer-box">
                   <div class="inner-box">
-                    <img src="img/battery.svg" alt="battery icon" />
+                    <img src="img/svg/battery.svg" alt="battery icon" />
                   </div>
-                  <img class="ellipse" src="img/ellipse.svg" alt="" />
+                  <img
+                    class="ellipse"
+                    src="img/svg/ellipse.svg"
+                    alt="ellipse icon for design"
+                  />
                 </div>
                 <div class="features-content">
                   <p class="feature-name">Battery</p>
@@ -192,9 +211,13 @@
               <div class="feature-headphone">
                 <div class="outer-box">
                   <div class="inner-box">
-                    <img src="img/bluetooth.svg" alt="battery icon" />
+                    <img src="img/svg/bluetooth.svg" alt="bluetooth icon" />
                   </div>
-                  <img class="ellipse" src="img/ellipse.svg" alt="" />
+                  <img
+                    class="ellipse"
+                    src="img/svg/ellipse.svg"
+                    alt="ellipse icon for design"
+                  />
                 </div>
                 <div class="features-content">
                   <p class="feature-name">Bluetooth</p>
@@ -206,9 +229,13 @@
               <div class="feature-headphone">
                 <div class="outer-box">
                   <div class="inner-box">
-                    <img src="img/microphone.svg" alt="battery icon" />
+                    <img src="img/svg/microphone.svg" alt="microphone icon" />
                   </div>
-                  <img class="ellipse" src="img/ellipse.svg" alt="" />
+                  <img
+                    class="ellipse"
+                    src="img/svg/ellipse.svg"
+                    alt="ellipse icon for design"
+                  />
                 </div>
                 <div class="features-content">
                   <p class="feature-name">Microphone</p>
@@ -219,20 +246,38 @@
             </div>
           </div>
           <div class="features-img-box">
-            <img
-              class="feature-img"
-              src="img/features-headphone-yellow.png"
-              alt="yellow headphone"
-            />
+            <picture>
+              <source
+                srcset="img/headphones/features-headphone-yellow.webp"
+                type="image.webp"
+              />
+              <source
+                srcset="img/headphones/features-headphone-yellow.png"
+                type="image.png"
+              />
+              <img
+                class="feature-img"
+                src="img/headphones/features-headphone-yellow.webp"
+                alt="amazing designed yellow headphone"
+              />
+            </picture>
 
             <img
-              src="img/headphone-layer2.svg"
+              src="img/svg/headphone-layer2.svg"
               alt="layer for headphone"
               class="headphone-layer--second"
             />
 
-            <img class="vibe--first" src="img/vibe.svg" alt="" />
-            <img class="vibe--second" src="img/vibe.svg" alt="" />
+            <img
+              class="vibe--first"
+              src="img/svg/vibe.svg"
+              alt="vibe icon for design"
+            />
+            <img
+              class="vibe--second"
+              src="img/svg/vibe.svg"
+              alt="vibe icon for design"
+            />
           </div>
         </div>
       </section>
@@ -250,16 +295,16 @@
               <div class="product-img-box product-img-box--first">
                 <img
                   class="product-img product-img--first"
-                  src="img/product-red.png"
-                  alt="red headphone"
+                  src="img/headphones/product-red.png"
+                  alt="red solo headphone"
                 />
                 <button class="purchase-btn purchase-btn--first">
-                  <img src="img/savat.svg" alt="purchase icon" />
+                  <img src="img/svg/savat.svg" alt="purchase icon" />
                 </button>
               </div>
               <div class="product-content">
                 <div class="product-rate-box">
-                  <img src="img/five-star.svg" alt="five star icon" />
+                  <img src="img/svg/five-star.svg" alt="five star icon" />
                   <span class="product-rate-number">4.50</span>
                 </div>
                 <div class="product-price-box">
@@ -272,16 +317,16 @@
               <div class="product-img-box product-img-box--second">
                 <img
                   class="product-img product-img--second"
-                  src="img/product-blue.png"
-                  alt="red headphone"
+                  src="img/headphones/product-blue.png"
+                  alt="blue studio headphone"
                 />
                 <button class="purchase-btn purchase-btn--second">
-                  <img src="img/savat.svg" alt="purchase icon" />
+                  <img src="img/svg/savat.svg" alt="purchase icon" />
                 </button>
               </div>
               <div class="product-content">
                 <div class="product-rate-box">
-                  <img src="img/five-star.svg" alt="five star icon" />
+                  <img src="img/svg/five-star.svg" alt="five star icon" />
                   <span class="product-rate-number">4.50</span>
                 </div>
                 <div class="product-price-box">
@@ -294,16 +339,16 @@
               <div class="product-img-box product-img-box--third">
                 <img
                   class="product-img product-img--third"
-                  src="img/product-green.png"
-                  alt="red headphone"
+                  src="img/headphones/product-green.png"
+                  alt="green solo hd headphone"
                 />
                 <button class="purchase-btn purchase-btn--third">
-                  <img src="img/savat.svg" alt="purchase icon" />
+                  <img src="img/svg/savat.svg" alt="purchase icon" />
                 </button>
               </div>
               <div class="product-content">
                 <div class="product-rate-box">
-                  <img src="img/five-star.svg" alt="five star icon" />
+                  <img src="img/svg/five-star.svg" alt="five star icon" />
                   <span class="product-rate-number">4.50</span>
                 </div>
                 <div class="product-price-box">
@@ -321,7 +366,7 @@
           <div class="package-img-box">
             <img
               class="package-img"
-              src="img/package.png"
+              src="img/headphones/package.png"
               alt="headphone with package"
             />
           </div>
@@ -329,22 +374,22 @@
             <h2 class="secondary-heading">Whatever you get in the box</h2>
             <ul class="package-list">
               <li class="package-item">
-                <img src="img/outline-right-arrow.svg" alt="right arrow" />
+                <img src="img/svg/outline-right-arrow.svg" alt="right arrow" />
                 <span class="package-name">5A Charger</span>
               </li>
 
               <li class="package-item">
-                <img src="img/outline-right-arrow.svg" alt="right arrow" />
+                <img src="img/svg/outline-right-arrow.svg" alt="right arrow" />
                 <span class="package-name">Extra battery</span>
               </li>
 
               <li class="package-item">
-                <img src="img/outline-right-arrow.svg" alt="right arrow" />
+                <img src="img/svg/outline-right-arrow.svg" alt="right arrow" />
                 <span class="package-name">Sophisticated bag</span>
               </li>
 
               <li class="package-item">
-                <img src="img/outline-right-arrow.svg" alt="right arrow" />
+                <img src="img/svg/outline-right-arrow.svg" alt="right arrow" />
                 <span class="package-name">User manual guide</span>
               </li>
             </ul>
@@ -355,7 +400,7 @@
       <section class="section-cta">
         <div class="container container-cta">
           <img
-            src="img/subscribe-layer.svg"
+            src="img/svg/subscribe-layer.svg"
             alt="cta section layer img"
             class="subscribe-layer"
           />
@@ -383,7 +428,7 @@
       <div class="container-footer">
         <div class="footer-logo-box">
           <a class="footer-logo" href="#"
-            ><img class="logo" src="img/logo.svg" alt="logo icon"
+            ><img class="logo" src="img/svg/logo.svg" alt="logo icon"
           /></a>
         </div>
         <nav class="footer-nav">
@@ -400,9 +445,9 @@
           </ul>
         </nav>
         <div class="social-links">
-          <a href="#"><img src="img/instagram.svg" alt="insagram icon" /></a>
-          <a href="#"><img src="img/twitter.svg" alt="twitter icon" /></a>
-          <a href="#"><img src="img/facebook.svg" alt="facebook icon" /></a>
+          <a href="#"><img src="img/svg/instagram.svg" alt="insagram icon" /></a>
+          <a href="#"><img src="img/svg/twitter.svg" alt="twitter icon" /></a>
+          <a href="#"><img src="img/svg/facebook.svg" alt="facebook icon" /></a>
         </div>
       </div>
     </footer>
